@@ -1,0 +1,14 @@
+{
+  "name": "projaula2",
+  "version": "1.0.0",
+  "description": "Projeto de get e rota",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

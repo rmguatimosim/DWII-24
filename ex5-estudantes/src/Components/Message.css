@@ -1,0 +1,24 @@
+h5{
+    position: fixed;
+    width: 400px;
+    padding: 20px;
+    right: 50px;
+    top: 20px;
+    z-index: 99;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+.success{
+    background-color: green;
+}
+
+.failure{
+    background-color: rgb(227,60,60);
+}
+
+.warning{
+    background-color: rgb(174,179,45);
+}

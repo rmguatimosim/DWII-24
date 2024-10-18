@@ -1,0 +1,61 @@
+.card{
+    text-align: left;
+    font-size: 20px;
+    width: 750px;
+    background-color:#282c34;
+    color: aliceblue;
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    
+  }
+  
+  .nome{
+    font-weight: bold;
+    color: green;
+    
+  }
+  img{
+    width: 150px;
+  }
+  .botaoRemover{
+    position: absolute;
+    right: 0px;
+    border-radius: 30px;
+  }
+  
+  .cardApagar{
+    background-color: red;
+    border-radius: 10px;
+  }
+
+  .botaoConfirmarRemover{
+    margin-right: 7px;
+    color: aliceblue;
+    background-color: red;
+    border-color: red;
+      
+
+  }
+  .botaoCancelarRemover{
+    margin-right: 7px;
+    color: aliceblue;
+    background-color: red;
+    border-color: red;
+    
+  }
+
+  .botaoConfirmarRemover:hover{
+    color: white;
+    background-color: red;
+    border-color: white;
+    
+  }
+  .divApagar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+  }
+  

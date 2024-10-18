@@ -1,0 +1,16 @@
+li{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #121518;
+    border-radius: 10px;
+
+}
+
