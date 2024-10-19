@@ -3,7 +3,7 @@ import Nav from "./Nav";
 const Home = () => {
     return(
         <>  
-            <Nav />
+            {/* <Nav /> */}
             <h1>Home</h1>        
 
         
