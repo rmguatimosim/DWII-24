@@ -5,9 +5,9 @@ import CursosRootLayout from './components/cursos/CursosRootLayout'
 import ErrorPage from './components/ErrorPage'
 import Home from './components/Home'
 import Index, {getCursos} from './components/cursos/Index'
-import New from './components/cursos/New'
-import Show, {getCurso} from './components/cursos/Show'
-import Edit from './components/cursos/Edit'
+import New, {addCurso} from './components/cursos/New'
+import Show, {deleteCurso, getCurso} from './components/cursos/Show'
+import Edit, {updateCurso} from './components/cursos/Edit'
 
 
 
@@ -24,17 +24,18 @@ function App() {
           children: [
             {index: true, element: <Index />, loader: getCursos},
             {path: ':id', 
-            id: 'cursoDetail',
-            loader: getCurso, 
-            children: [
-              {index: true, element: <Show />},
-              {path: 'edit', element: <Edit />}
-            ]},
-            {path: 'new', element: <New />}
+              id: 'cursoDetail',
+             loader: getCurso, 
+               children: [
+                {index: true, element: <Show />,  action: deleteCurso},
+                {path: 'edit', element: <Edit />, action: updateCurso}
+                ]
+              },
+            {path: 'new', element: <New />, action: addCurso}
           ]
         }
       ]
-    }
+    } 
   ])
 
   return (
